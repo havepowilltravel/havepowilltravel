@@ -49,13 +49,15 @@ Write a post or two, or three.  And I'll write some more about shell scripts to 
 
 First, the price is right. Second, it's Jekyll-friendly; not a lot of pushing on a rope to get things working.  It's all pretty simple, really.
 
+Second, Github runs security scans of your repositories.  If a gem that's getting dragged in by some component, and without reading the Gemfile.lock you don't know about, has a security vulnerability, Github will flag it for you.
+
 # Why Not Github?
 
 Well, it's not Wordpress.  For a real discussion of this, see the [About][about] post.
 
 Digital Ocean costs money.  And you need to a bunch of pushing.  Heroku has a free tier, great support for Ruby, and they have become more amenable to Jekyll.  But their free tier goes to sleep, so a reader will have to wait for the dyno to come back to life if it's been idle for an hour or so.
 
-And for the Microsoft haters out there (I am mos def not a fanboi and think that Maddog's vision of total world domination by open source is a wonderful antidote for WinTel hegemony), if Redmond's new owneship of Github becomes onerous, having your blog site in a local repo frees you to take your posts and play elsewhere.  In the meantime, the price is right.
+And for the Microsoft haters out there (I am mos def not a fanboi and think that Maddog's vision of total world domination by open source is a wonderful antidote for WinTel hegemony), if Redmond's new ownership of Github becomes onerous, having your blog site in a local repo frees you to take your posts and play elsewhere.  In the meantime, the price is right.
 
 Another consideration is around the _drafts folder, if you use one.  It's certainly enticing to version control your drafts.  I tend to have quite a few half-baked thoughts in draft form and it would really suck to loose them in the event of an accident.  But do they need versioning?  Will you be wanting to roll a blog post back to a previous incarnation?  Or will a good backup and recovery (it ain't a backup if you can't recover it: Practice!) strategy be sufficient to protect from accident?  You need to back up the git repo anyway, unless you're considering the Github version to be that.  
 
