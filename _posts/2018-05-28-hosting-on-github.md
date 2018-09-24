@@ -152,6 +152,35 @@ The first few things to do are:
 
 Github has an excellent [summary][add-exisiting-repo] on adding an existing repo to Github.  The individual commands to be executed locally are well-annotated.  In particular, look at steps 1, 7 and 8.  And read about "The site doesn't publish", below.
 
+# Add Github to Your Local Repository as a Remote
+
+`git remote add origin https://github.com/<your-username>/<your-blog-repo-name>`
+
+And then moving your site to Giyhub is as simple as
+
+`git push -u origin master`
+
+Well, maybe not.  If you get a message to the effect
+```
+To https://github.com/havepowilltravel/havepowilltravel
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/havepowilltravel/havepowilltravel'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+what has happened is that the remote (Github) repository has changes that are not present in your local repository.  How can this happen, if you;re the only person working in the repository?  Well, perhaps, in order to clean up a bunch of 'stuff,' you moved the code for the site to a new directory tree and created a new repository.
+
+If you're sure that your local repository is the ultimate authority, add the `--force` option to the push:
+
+`git push --force -u origin master`
+
+and all should be fine.
+
+After the push finishes, point your web browser at your site: *<your-username>.github.io/<your-blog-repo-name>* and check out your handywork.
+
 # Troubleshooting a Push
 
 The stuff they didn't tell you in college ....
@@ -183,9 +212,9 @@ Such as about.md.
 The _config.yml file needs some changes from the defaults, if you created the site with `jekyll new.`
 
 Note that after setting the baseurl for GitHub, trying to serve your site locally for testing purposes will no longer work.  Why?  the baseurl parmeter 
-should be "".  So do we keep bouncing back and forth in _config.yml?  No, add the `--baseurl ""` to your local `jekyll serve` command.
+should be "".  So do we keep bouncing back and forth in _config.yml?  No, add the `--baseurl ""` to your local `jekyll serve` command:
 
-
+`bundle exec jekyll server --baseurl ""`
 
 More troubleshooting tips are at [Troubleshooting GitHub Pages builds.](https://help.github.com/articles/troubleshooting-github-pages-builds)
 
