@@ -8,7 +8,9 @@ permalink: /about/
 
 There are probably too many, which only serves to clutter up search results.
 
-The real motive behind this activity is to keep a notebook, recording the nuggets discovered on the journey through evolving tech.  Strictly speaking, a formal blog site isn't necessary to meet that goal.  On the other hand, some blog posts have been incredibly useful in working with CakePHP, Ruby on Rails, Heroku, Digital Ocean, and, yes, GitHub, over the last few years.  And some have not been so useful, doing nothing more than parroting published documentation.
+The real motive behind this activity is to keep a notebook, recording the nuggets discovered on the journey through evolving tech.  Strictly speaking, a formal blog site isn't necessary to meet that goal.  On the other hand, some blog posts have been incredibly useful in working with CakePHP, Ruby on Rails, Heroku, Digital Ocean, and, yes, GitHub, over the last few years, providing nuggets of information.
+
+And some have not been so useful, doing nothing more than parroting published documentation.
 
 And what's the use in that?  Where are the nuggets?
 
@@ -24,5 +26,7 @@ Because the price is right: Free.
 
 After all, that's one of the magical four-letter words of American marketing ("sale" is another).
 
+Another reason is that it's Jekyll friendly.  You don't even need a local instance, so you can blog from anywhere on pretty much any device, including from the beach using your phone.
 
-[why]: /why-jekyll/
+
+[why]: {{ site.baseurl }}/why-jekyll/

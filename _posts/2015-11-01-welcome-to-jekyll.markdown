@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2018-05-28 08:40:03 -0400
+date:   2015-11-01 08:40:03 -0500
 permalink: /why-jekyll/
 categories: jekyll update
+tags: 
 ---
 # The Virtues of Jekyll
 
@@ -14,8 +15,6 @@ Going back to the essential purpose of this blog, which is to keep a notebook, w
 ### Further Reading
 
 Some wonderful other blog posts about Virtues of Jekyll.
-
-(make a list ....)
 
 * Jonathan McGlone has a great [almost-rant](http://jmcglone.com/notes/2014/05/03/using-github-to-create-and-host-a-personal-website)
 

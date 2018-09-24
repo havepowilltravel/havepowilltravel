@@ -13,17 +13,29 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+#
 title: "NL: The NULL Device"
 copyleft: "&copy T. Mueller 2018"
-email: nl@havepowilltravel.com
-adminemail: blog-admin@havepowilltravel.com
+
+#email: nl@havepowilltravel.com
+email: nl@silutions.net
+
+#adminemail: blog-admin@havepowilltravel.com
+adminemail: blog-admin@silutions.net
+
 description: >- # this means to ignore newlines until "baseurl:"
   Random thoughts and musings that are being backed up to the NULL device.  Hopefully,
   it will not fill up
 
-
-baseurl: "/havepowilltravel" # the subpath of your site, e.g. /blog
-url: "https://nl.havepowilltravel.com" # the base hostname & protocol for your site, e.g. http://example.com
+#
+#  url and baseurl have varients, depending on whether we're in DEVELOPMENT or PRODUCTION.
+#
+#
+# PRODUCTION:
+#
+baseurl: "/havepowilltravel"
+#url: "https://nl.havepowilltravel.com"
+url: "https://havepowilltravel.github.io"  # until I register the name
 
 
 twitter_username: jekyllrb
@@ -42,11 +54,13 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - README.md
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+   - _site/

@@ -1,0 +1,9 @@
+# DEVELOPMENT-only configuration settings
+#
+#  url and baseurl have varients, depending on whether we're in DEVELOPMENT or PRODUCTION.
+#
+# DEVELOPMENT:
+baseurl: ""
+url: "http://localhost"
+#
+
