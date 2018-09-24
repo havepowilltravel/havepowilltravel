@@ -29,3 +29,7 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+#
+# added after Github flags a security vulnerbility
+gem "rubyzip", "~> 1.2.2"
+
